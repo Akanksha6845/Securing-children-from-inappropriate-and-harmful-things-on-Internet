@@ -31,8 +31,8 @@ import pandas as pd
 punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~=`'''
 
 # Input and output file paths
-input_csv = 'cleaned_testdata_manual2_2009.csv'
-output_csv = 'cleaned_cleaned_testdata_manual2_2009.csv'  # Replace with your desired output CSV file
+input_csv = 'cleaned_testdata_manual2_2009 (1).csv'
+output_csv = 'cleaned_cleaned_testdata_manual2_2009 (1).csv'  # Replace with your desired output CSV file
 
 # Load the dataset, specifying the encoding as 'latin-1'
 df = pd.read_csv(input_csv, encoding='latin-1') # The error was due to the file having a different encoding. This line fixes it by using the 'latin-1' encoding, which is often used for text files.
@@ -63,8 +63,8 @@ import nltk
 nltk.download('punkt_tab')
 
 # Input and output file paths
-input_csv = 'cleaned_cleaned_testdata_manual2_2009.csv'   # Replace with your input CSV file
-output_csv = 'tokenized_cleaned_cleaned_testdata_manual2_2009.csv'  # Replace with your desired output CSV file
+input_csv = 'cleaned_cleaned_testdata_manual2_2009 (1).csv'   # Replace with your input CSV file
+output_csv = 'tokenized_cleaned_cleaned_testdata_manual2_2009 (1).csv'  # Replace with your desired output CSV file
 
 # Load the dataset
 df = pd.read_csv(input_csv)
@@ -93,8 +93,8 @@ nltk.download('stopwords')
 nltk.download('punkt')
 
 # Input and output file paths
-input_csv = 'tokenized_cleaned_cleaned_testdata_manual2_2009.csv'   # Replace with your input CSV file
-output_csv = 'stopwords_tokenized_cleaned_cleaned_testdata_manual2_2009.csv'  # Replace with your desired output CSV file
+input_csv = 'tokenized_cleaned_cleaned_testdata_manual2_2009 (1).csv'   # Replace with your input CSV file
+output_csv = 'stopwords_tokenized_cleaned_cleaned_testdata_manual2_2009 (1).csv'  # Replace with your desired output CSV file
 
 # Load the dataset
 df = pd.read_csv(input_csv)
@@ -130,8 +130,8 @@ import nltk
 nltk.download('punkt_tab')
 
 # Input and output file pathsstopwords_tokenized_cleaned_cleaned_kaggle_parsed_dataset.csv
-input_csv = 'stopwords_tokenized_cleaned_cleaned_testdata_manual2_2009.csv'   # Replace with your input CSV file
-output_csv = 'stemmed_stopwords_tokenized_cleaned_cleaned_testdata_manual2_2009.csv'  # Replace with your desired output CSV file
+input_csv = 'stopwords_tokenized_cleaned_cleaned_testdata_manual2_2009 (1).csv'   # Replace with your input CSV file
+output_csv = 'stemmed_stopwords_tokenized_cleaned_cleaned_testdata_manual2_2009 (1).csv'  # Replace with your desired output CSV file
 
 # Load the dataset
 df = pd.read_csv(input_csv)
@@ -176,8 +176,8 @@ nltk.download('wordnet')
 nltk.download('omw-1.4')
 
 # Input and output file paths
-input_csv = 'stemmed_stopwords_tokenized_cleaned_cleaned_testdata_manual2_2009.csv'   # Replace with your input CSV file
-output_csv = 'lemmatized_stemmed_stopwords_tokenized_cleaned_cleaned_testdata_manual2_2009.csv'  # Replace with your desired output CSV file
+input_csv = 'stemmed_stopwords_tokenized_cleaned_cleaned_testdata_manual2_2009 (1).csv'   # Replace with your input CSV file
+output_csv = 'lemmatized_stemmed_stopwords_tokenized_cleaned_cleaned_testdata_manual2_2009 (1).csv'  # Replace with your desired output CSV file
 
 # Load the dataset
 df = pd.read_csv(input_csv)
